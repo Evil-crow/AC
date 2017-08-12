@@ -1,28 +1,11 @@
 #include<stdio.h>
-
-int judge(int );
+#include<stdlib.h>
+#include<string.h>
 int main(void)
 {
-    int i;
-    scanf("%d",&i);
-    if(judge(i))
-    printf("111111111");
-}
+    char c;
 
-
-int judge(int n)
-{
-    int i,flag;
-    flag = 0;
-    for(i = 2;i < n;i++)
-    {
-        if(n%i == 0)
-        flag = 1;
-        else
-        continue;
-    }
-    if(flag == 1)
-    return 0;
-    else
-    return 1;
+    scanf("%c",&c);
+    int a = atoi(c);
+    printf("a:%d\n",a)
 }
