@@ -26,3 +26,11 @@ public:
         return temp;
     }
 };
+
+
+/*
+ * 标程解法:
+ * 1. 暴力法, for(){ for(){...} }, 不计成本, 是比较无脑的解法
+ * 2. TWO-PASS HASH, 首次循环进行hash, 二次进行匹配
+ * 3. ONE-PASS HASH, 一边匹配, 一边放入
+ */
